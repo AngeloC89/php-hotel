@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <div class="container  d-flex justify-content-between ">
+        <div class="container  d-flex justify-content-center">
             <h1>
                Hotels
             </h1>
