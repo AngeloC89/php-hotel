@@ -19,10 +19,28 @@
 
 <body>
     <header>
-        <div class="container  d-flex justify-content-center">
+        <div class="container  d-flex justify-content-between mb-5 mt-2">
             <h1>
-               Hotels
+                Hotels
             </h1>
+
+            <form class="d-flex w-25" action="index.php" method="GET">
+    
+                <select class="form-control me-2" name="parking">
+                    <option value="all">All</option>
+                    <option value="0">without parking</option>
+                    <option value="1">With parking </option>              
+                </select>
+                <select class="form-control me-2" name="vote">
+                    <option value="all">All</option>
+                    <option value="1">&#9733;</option>
+                    <option value="2">&#9733;&#9733;</option>              
+                    <option value="3">&#9733;&#9733;&#9733;</option>              
+                    <option value="4">&#9733;&#9733;&#9733;&#9733;</option>              
+                    <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>              
+                </select>
+                <button type="submit" class="btn btn-outline-secondary">Search</button>
+            </form>
         </div>
 
     </header>

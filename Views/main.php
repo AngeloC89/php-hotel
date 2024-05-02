@@ -1,13 +1,13 @@
 <?php
 $template = "";
-foreach ($hotels as $key) {
+foreach ($newArray as $key) {
     $template .= "<tr> <td>{$key['name']}</td> <td>{$key['description']}</td> <td>{$key['parking']}</td> <td>{$key['vote']}</td> <td>{$key['distance_to_center']}</td> </tr>";
 };
 ?>
 
 
 <main>
-    <table class="table">
+    <table class="table container my-5 ">
         <thead>
             <tr>
                 <th scope="col">Name</th>
@@ -22,3 +22,6 @@ foreach ($hotels as $key) {
         </tbody>
     </table>
 </main>
+
+</body>
+</html>
