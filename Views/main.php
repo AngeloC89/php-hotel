@@ -1,13 +1,3 @@
-<?php
-
-//this forEach is for print the hotels
-$template = "";
-foreach ($arrayF as $key) {
-    $template .= "<tr> <td>{$key['name']}</td> <td>{$key['description']}</td> <td>{$key['parking']}</td> <td>{$key['vote']}</td> <td>{$key['distance_to_center']}</td> </tr>";
-};
-?>
-
-
 <main>
     <table class="table container my-5 ">
         <thead>

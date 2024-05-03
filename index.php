@@ -1,20 +1,9 @@
 <?php
-include __DIR__ . "/Models/hotels.php";
-// var_dump($hotels);
 
-//this is the conditions to filter
-if (!empty($_GET['parking']) || !empty($_GET['vote'])) {
-  $parking = $_GET['parking'];
-  $vote = $_GET['vote'];
-  $arrayF = array_filter($hotels, function ($key) use ($parking) {
-    return $key['parking'] == $parking || $parking == "all";
-  });
-  $arrayF = array_filter($arrayF, function ($key) use ($vote) {
-    return $key['vote'] >= $vote || $vote == "all";
-  });
-} else {
-  $arrayF = $hotels;
-}
+
+include __DIR__ ."/Controllers/hotelsMethods.php";
+$template = printTable($data);
+//var_dump($data);
 
 
 include __DIR__ . "/Views/header.php";
