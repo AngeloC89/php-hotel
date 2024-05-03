@@ -1,6 +1,8 @@
 <?php
+
+//this forEach is for print the hotels
 $template = "";
-foreach ($newArray as $key) {
+foreach ($arrayF as $key) {
     $template .= "<tr> <td>{$key['name']}</td> <td>{$key['description']}</td> <td>{$key['parking']}</td> <td>{$key['vote']}</td> <td>{$key['distance_to_center']}</td> </tr>";
 };
 ?>
@@ -14,7 +16,7 @@ foreach ($newArray as $key) {
                 <th scope="col">Description</th>
                 <th scope="col">Parking</th>
                 <th scope="col">Vote</th>
-                <th scope="col">Distance</th>
+                <th scope="col">Distance to center</th>
             </tr>
         </thead>
         <tbody>

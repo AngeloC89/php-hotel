@@ -23,21 +23,25 @@
             <h1>
                 Hotels
             </h1>
-
-            <form class="d-flex w-25" action="index.php" method="GET">
-    
+<!-- ********************* FORM ************************ -->
+            <form class="d-flex align-items-center w-50" action="index.php" method="GET">
+              <!-- select to parking  -->
+            <h5 class="me-2">Parking</h5>
                 <select class="form-control me-2" name="parking">
                     <option value="all">All</option>
                     <option value="0">without parking</option>
-                    <option value="1">With parking </option>              
+                    <option value="1">With parking </option>
                 </select>
+
+                <!-- select to vote -->
+                <h5 class="me-2">Vote</h5>
                 <select class="form-control me-2" name="vote">
                     <option value="all">All</option>
                     <option value="1">&#9733;</option>
-                    <option value="2">&#9733;&#9733;</option>              
-                    <option value="3">&#9733;&#9733;&#9733;</option>              
-                    <option value="4">&#9733;&#9733;&#9733;&#9733;</option>              
-                    <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>              
+                    <option value="2">&#9733;&#9733;</option>
+                    <option value="3">&#9733;&#9733;&#9733;</option>
+                    <option value="4">&#9733;&#9733;&#9733;&#9733;</option>
+                    <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
                 </select>
                 <button type="submit" class="btn btn-outline-secondary">Search</button>
             </form>
